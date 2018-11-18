@@ -45,7 +45,7 @@
   align-items: center;
 }
 
-.header-tabs-menu > li.active {
+.header-tabs-menu > li.active, .header-tabs-menu > li:hover {
   border-bottom:3px solid #fff;
 }
 
@@ -77,8 +77,21 @@
   align-items: center;
 }
 
+.header-account-menu > li:hover {
+  background-color: #44bd32;
+}
+
 .header-account-menu > li > a:link, .header-account-menu > li > a:visited, .header-account-menu > li > a:hover {
   color:#fff;
   text-decoration: none;
   overflow: hidden;
+}
+
+.header-settings-dropdown > .dropdown-toggle:link, .header-settings-dropdown > .dropdown-toggle:visited, .header-settings-dropdown > .dropdown-toggle:hover {
+  color:#fff;
+}
+
+.header-settings-dropdown > .dropdown-menu {
+  top:10px;
+  left:-100px;
 }
