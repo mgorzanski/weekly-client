@@ -8,7 +8,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <Route path="/" exact component={Calendar} />
+          <React.Fragment>
+            <Route path="/" exact component={Calendar} />
+            <Route path="/calendar" component={Calendar} />
+          </React.Fragment>
         </Router>
       </div>
     );

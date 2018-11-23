@@ -11,15 +11,15 @@ class Header extends React.Component {
         </div>
         <nav className="header-tabs-nav">
           <ul className="header-tabs-menu">
-            <li className="active"><Link to="/">Calendar</Link></li>
-            <li><Link to="/">To-do</Link></li>
-            <li><Link to="/">Habits</Link></li>
-            <li><Link to="/">Calendar</Link></li>
+            <li className="active"><Link to="/calendar">Calendar</Link></li>
+            <li><Link to="/to-do">To-do</Link></li>
+            <li><Link to="/habits">Habits</Link></li>
+            <li><Link to="/notes">Notes</Link></li>
           </ul>
         </nav>
         <nav className="header-account-nav">
           <ul className="header-account-menu">
-            <li><Link to="/">matigora</Link></li>
+            <li><Link to="/users/matigora">matigora</Link></li>
             <li>
               <div className="dropdown header-settings-dropdown">
                 <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -27,7 +27,8 @@ class Header extends React.Component {
                 </a>
 
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a className="dropdown-item" href="#">Settings</a>
+                  <a className="dropdown-item" href="/users/matigora/settings">Settings</a>
+                  <a className="dropdown-item" href="/help/">Help</a>
                   <a className="dropdown-item" href="#">Logout</a>
                 </div>
               </div>
